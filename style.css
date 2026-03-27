@@ -1,0 +1,99 @@
+/* --- 1. CONFIGURATION GÉNÉRALE --- */
+body {
+  background-color: #F7F9FC; /* Fond gris très clair */
+  color: #575E75;           /* Texte gris bleuté */
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+  color: #2D323E;
+}
+
+/* --- 2. CLASSES GÉNÉRIQUES (Réutilisables) --- */
+
+.container {
+  width: 700px;      /* Largeur fixe pour ordi */
+  margin: 40px auto; /* Centrage automatique */
+}
+
+.card-white {
+  background: white;
+  padding: 40px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1); /* Ombre élégante */
+}
+
+.text-center {
+  text-align: center;
+}
+
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Image ronde */
+  object-fit: cover;
+  border: 4px solid #F7F9FC;
+}
+
+/* --- 3. ÉLÉMENTS SPÉCIFIQUES --- */
+
+/* Bouton style */
+.btn-blue {
+  background-color: #6B72E1;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-blue:hover {
+  background-color: #4E54C8;
+  color: white;
+}
+
+/* Liste de réseaux sociaux horizontale */
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 20px;
+}
+
+.list-inline > li {
+  display: inline;
+  padding: 0px 20px;
+}
+
+.list-inline i {
+  font-size: 30px;
+  color: #6B72E1;
+  transition: color 0.3s ease;
+}
+
+.list-inline i:hover {
+  color: #2D323E;
+}
+
+/* --- 4. RESPONSIVE DESIGN --- */
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 300px;
+  }
+  .card-white {
+    padding: 20px;
+  }
+}
